@@ -439,7 +439,7 @@ client.once('ready', async () => {
     const rest = new REST({ version: '10' }).setToken(TOKEN);
     try {
         await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
-        console.log('Slash commands de 1v1 registados com sucesso!');
+        console.log('Slash commands de 1v1 registados com sucesso globalmente!');
     } catch (error) {
         console.error('Erro ao registar comandos:', error);
     }
